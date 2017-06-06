@@ -118,8 +118,7 @@ makeselection(int pool, int number, int sort, int *select) {
 	
 	/* Double-check inputs */
 	if ((pool > (UINT16_MAX + 1)) || (number > UINT16_MAX) ||
-	    (number < 1) || (number == pool) ||
-	    ((sort != SORTED) && (sort != RANDOM))) {
+	    (number < 1) || ((sort != SORTED) && (sort != RANDOM))) {
 		return 1;
 	}
 
